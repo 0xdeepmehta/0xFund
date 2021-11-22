@@ -8,11 +8,11 @@ import {
 } from "@solana/web3.js";
 import { deserialize, serialize } from "borsh";
 
-const cluster = "http://127.0.0.1:8899";
+const cluster = "https://api.devnet.solana.com";
 const connection = new Connection(cluster, "confirmed");
 const wallet = new Wallet("https://www.sollet.io", cluster);
 const programId= new PublicKey(
-	"DaSERrkPJNR3GeE6Xxcn7PpoZo9G4oVY4WSEMkSVaQdn"
+	"8yQy6iRQKHu2yyWJpXRocpBXL1yXP1VKdk79jkVVQY9V"
 );
 
 export async function setPayerAndBlockhashTransaction(instructions) {
